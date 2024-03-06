@@ -1,0 +1,27 @@
+<div class="col-lg-6 offset-lg-3">
+
+    <h3 class="mb-3">Regisztráció</h3>
+    
+    <div class="form-floating mb-3">
+        <input type="text" class="form-control" id="name" placeholder="" ng-model="user.name">
+        <label for="name">Felhasználónév</label>
+    </div>
+
+    <div class="form-floating mb-3">
+        <input type="email" class="form-control" id="email" placeholder="" ng-model="user.email">
+        <label for="email">E-mail cím</label>
+    </div>
+
+    <div class="form-floating mb-3">
+        <input type="password" class="form-control" id="passwd" placeholder="" ng-model="user.passwd">
+        <label for="passwd">Jelszó</label>
+    </div>
+
+    <div class="form-floating mb-3">
+        <input type="password" class="form-control" id="confirm" placeholder="" ng-model="user.confirm">
+        <label for="confirm">Jelszó megerősítése</label>
+    </div>
+
+    <button class="btn btn-primary mb-3" ng-click="register()">Regisztráció</button>
+
+</div>
