@@ -1,4 +1,4 @@
-var app = angular.module('weatherApp', ['ngRoute', 'ngNotify']);
+var app = angular.module('listApp', ['ngRoute', 'ngNotify']);
 
 app.run(function($rootScope, $location){
     $rootScope.appTitle = 'Bevásárlólista';
@@ -7,7 +7,7 @@ app.run(function($rootScope, $location){
     $rootScope.serverUrl = 'http://localhost:5000';
    // $rootScope.serverUrl = 'http://weatherforecastapp.com';
 
-    if (JSON.parse(sessionStorage.getItem('weatherApp'))){
+    if (JSON.parse(sessionStorage.getItem('listApp'))){
         $rootScope.isLoggedIn = true;
     }else{
         $rootScope.isLoggedIn = false;
@@ -29,8 +29,8 @@ app.config(function($routeProvider){
         controller: 'userCtrl'
     })
     .when('/newdata', {
-        templateUrl: '/Views/newdata.html',
-        controller: 'weatherCtrl'
+        templateUrl: '/Views/list.html',
+        controller: 'ListCtrl'
     })
     .otherwise({redirectTo:'/home'});
 });

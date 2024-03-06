@@ -1,13 +1,9 @@
 <!DOCTYPE html>
-<html lang="hu" ng-app="weatherApp">
+<html lang="hu" ng-app="listApp">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>{{appTitle}}</title>
-
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
         
         <link rel="stylesheet" href="Assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="Assets/css/ng-notify.min.css">
@@ -43,10 +39,10 @@
                     <!-- bejelentkezve -->
                     <ul class="navbar-nav" id="loggedInMenu" ng-show="isLoggedIn">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Adatrögzítés</a>
+                            <a class="nav-link" href="#">Bevásárlólista <i class="bi bi-card-checklist"></i></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Kilépés</a>
+                            <a class="nav-link" href="#">Kilépés <i class="bi bi-box-arrow-right"></i></a>
                         </li>     
                     </ul>
                 </div>
